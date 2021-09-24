@@ -1,4 +1,5 @@
 import React from "react";
+import headshot from "../../src/costar_headshot.png";
 
 const pictureStyle = {
   height: "200px",
@@ -35,8 +36,11 @@ const PictureCard = () => {
       <h3>
         <b> Sam Smith</b>
       </h3>
-      <img style={pictureStyle} src="../../costar_headshot.png" alt="" />
-      <div style={captionStyle}> Software Engineer at CoStar Group</div>
+      <img style={pictureStyle} src={headshot} alt="" />
+      <div style={captionStyle}>
+        {" "}
+        Associate Software Engineer at CoStar Group
+      </div>
     </div>
   );
 };
