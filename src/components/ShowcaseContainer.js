@@ -8,7 +8,6 @@ import Header from "./Header";
  * Link Github and LinkedIn
  * Fill out showcase cards more, could put TDlist in portfolio, but need something else as well, maybe tlyft for now
  * Add some of the stuff to common component, there is so much repeated code here
- * deploy this somehow
  */
 
 const showcaseCardStyle = {
@@ -99,8 +98,14 @@ const ShowcaseContainer = () => {
           <div className="col-6">
             <h3 style={showcaseItemTitleStyle}>Experience</h3>
             <div style={showcaseCardStyle}>
-              <ShowcaseCard text="Riggs Lab" />
-              <ShowcaseCard text="CoStar Group" />
+              <ShowcaseCard
+                boldedText={"Riggs Lab: "}
+                text="Used Python Data Science libraries to analyze eye tracking data"
+              />
+              <ShowcaseCard
+                boldedText={"CoStar Group: "}
+                text="CoStar Group: Utilized React and NodeJS to contribute to internal company tool"
+              />
             </div>
           </div>
         </div>
@@ -113,8 +118,10 @@ const ShowcaseContainer = () => {
             <h3 style={showcaseItemTitleStyle}>Education</h3>
 
             <div style={showcaseCardStyle}>
-              <ShowcaseCard text="UVA" />
-              <ShowcaseCard text="EMPTY" />
+              <ShowcaseCard
+                boldedText={"University of Virginia: "}
+                text="BA in Computer Science, Cumulative GPA 3.88"
+              />
             </div>
           </div>
         </div>
@@ -127,7 +134,7 @@ const ShowcaseContainer = () => {
             <h3 style={showcaseItemTitleStyle}>Portfolio</h3>
 
             <div style={showcaseCardStyle}>
-              <ShowcaseCard text="EMPTY" />
+              <ShowcaseCard link={"https://github.com/samsmith0704/"} />
               <ShowcaseCard text="EMPTY" />
             </div>
           </div>
@@ -140,8 +147,11 @@ const ShowcaseContainer = () => {
             <h3 style={showcaseItemTitleStyle}>Contact Info</h3>
 
             <div style={showcaseCardStyle}>
-              <ShowcaseCard link={"https://github.com/samsmith0704/"} />
-              <ShowcaseCard text="EMPTY" />
+              <ShowcaseCard
+                boldedText={"Email and Phone number: "}
+                text="sjs5pg@virginia.edu
+              (703)-424-3911"
+              />
             </div>
           </div>
         </div>
